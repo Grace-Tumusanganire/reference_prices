@@ -1,0 +1,37 @@
+/* Parcel Reference Prices — styles */
+html,body{margin:0;height:100%;font-family:'Outfit',-apple-system,sans-serif;color:#0f172a}
+#app{position:absolute;inset:0;display:flex;flex-direction:column}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+     padding:10px 16px;background:#fff;border-bottom:1px solid #e8ebf2;box-shadow:0 1px 3px rgba(0,0,0,.05);z-index:10}
+.title{font-size:16px;font-weight:700;letter-spacing:-.3px}
+.right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hint{font-size:12px;color:#64748b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:55vw}
+.hint.warn{color:#b45309}
+.toggle{display:inline-flex;align-items:center;background:#f1f3f8;border-radius:9px;padding:3px}
+.toggle button{border:none;background:transparent;font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;
+     color:#5a6178;padding:7px 16px;border-radius:6px;cursor:pointer;transition:all .15s}
+.toggle button.active{background:#fff;color:#2563eb;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.toggle button:disabled{opacity:.5;cursor:wait}
+.toggle button:focus-visible{outline:2px solid #2563eb;outline-offset:1px}
+.toggle .sep{width:1px;height:18px;background:#d8dce6;margin:0 3px}
+.stage{flex:1;position:relative}
+#viewDiv{position:absolute;inset:0}
+#overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+     background:#f7f8fb;color:#64748b;font-size:14px;z-index:20;gap:10px}
+.spin{width:16px;height:16px;border:2px solid #e2e8f0;border-top-color:#2563eb;border-radius:50%;animation:sp .7s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation-duration:2s}}
+.err{max-width:480px;text-align:center;line-height:1.6;color:#b91c1c;padding:0 16px}
+.err code{font-size:12px;color:#7f1d1d;word-break:break-word}
+
+/* swipe year tags */
+.swipe-tag{position:absolute;top:14px;z-index:5;display:none;pointer-events:none;white-space:nowrap;
+     background:#fff;color:#0f172a;font-size:13px;font-weight:700;padding:4px 10px;border-radius:6px;
+     box-shadow:0 1px 3px rgba(0,0,0,.18)}
+.swipe-tag.show{display:block}
+
+/* legend panel */
+.legend-panel{width:270px;max-height:60vh;overflow:auto;background:#fff}
+.legend-note{padding:10px 12px;font-size:12px;line-height:1.5;color:#475569;border-bottom:1px solid #eef0f5}
+.legend-note b{display:block;color:#0f172a;font-size:13px;margin-bottom:2px}
+.legend-panel .esri-legend{padding:4px 0}
