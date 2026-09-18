@@ -469,9 +469,9 @@ require([
         const panel = document.createElement("div");
         panel.className = "legend-panel";
         panel.innerHTML =
-            '<div class="legend-note"><b>Price labels</b>' +
-            'Estimated plot value in ' + escapeHtml(CURRENCY) + ': the village average rate × plot size. ' +
-            'K = thousand, M = million. Labels appear when you zoom in.</div>' +
+            // '<div class="legend-note"><b>Price labels</b>' +
+            // 'Estimated plot value in ' + escapeHtml(CURRENCY) + ': the village average rate × plot size. ' +
+            // 'K = thousand, M = million. Labels appear when you zoom in.</div>' +
             '<div class="legend-host"></div>';
         new Legend({ view, container:panel.querySelector(".legend-host"), respectLayerVisibility:true });
         view.ui.add(new Expand({
